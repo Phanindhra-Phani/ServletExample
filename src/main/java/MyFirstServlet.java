@@ -29,5 +29,17 @@ public class MyFirstServlet extends HttpServlet{
     }
 	 
 	 
+	public void doPost(HttpServletRequest req, HttpServletResponse response)
+		        throws ServletException, IOException
+    {
+//		 	response.setContentType("application/pdf");
+		 	response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			out.println("<html><body>");
+			out.println("<h1>This is my first Servlet</h1>");
+			out.println("</body></html>");
+       
+    }
+	 
 
 }
